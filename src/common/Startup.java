@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class Startup {
 
@@ -70,6 +71,17 @@ public class Startup {
         Collections.sort(emps);
         System.out.println("\nSorted TreeMap");
         for(Employee e: emps){
+            System.out.println(e);
+        }
+        
+        Set<Employee> emps2 = new TreeSet<>();
+        emps2.add(e1);
+        emps2.add(e2);
+        emps2.add(e3);
+        emps2.add(e4);
+        
+        System.out.println("\nSorted Tree Set");
+        for(Employee e: emps2){
             System.out.println(e);
         }
     }
